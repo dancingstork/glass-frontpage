@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to top left, pink, rgb(243, 226, 228));
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 10vh auto;
+  background: rgba(156, 133, 133, 0.7);
+  background: linear-gradient(to right bottom,
+      rgba(156, 133, 133, 0.7),
+      rgba(255, 255, 255, 0.3));
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  backdrop-filter: blur(2rem);
+  z-index: 1;
+}
+
+/* .circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+} */
+
+/* 
+.circle1 {
+  top: 15px;
+  right: 25px;
+} */
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: white;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.425),
+      rgba(255, 255, 255, 0.418));
+  right: -100px;
+  top: -40px;
+  border-radius: 50%;
+  z-index: -124;
+}
+
+header {
+  background: rgba(212, 202, 202, 0.767);
+  border-radius: 20px;
+  position: relative;
+  flex: 1;
+}
+
+main {
+  flex: 5;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+li {
+  background: rgb(239, 223, 226);
+  list-style: none;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: .4rem;
+}
+
+li:hover {
+  background: rgb(211, 185, 189);
+}
+
+.info {
+  background: rgb(247, 208, 214);
+  padding: .5em;
+  position: absolute;
+}
+
+.info-one {
+  border-radius: 0 10px 10px 0;
+  left: 0;
+  bottom: 100px;
+}
+
+.info-two {
+  border-radius: 10px 0 0 10px;
+  right: 0;
+  bottom: 30px;
+
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+  color: rgb(105, 66, 72);
+}
+
+h1,
+.title-desc {
+  text-align: center;
+}
+
+h1 {
+  margin: 1.5rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+h2 {
+  padding: .5rem;
+  display: inline-block;
+}
+
+.other-text {
+  margin: 0 10% 2rem auto;
+  width: 20%;
+  border-top: 5px groove pink;
+}
